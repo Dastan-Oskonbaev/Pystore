@@ -8,8 +8,13 @@ class Product:
         self.price = price
         self.category = category
 
+    def __repr__(self):
+        return self.name
 
 
 class Category:
     def __init__(self, name:str):
         self.name = name
+
+    def __repr__(self):
+        return self.name
